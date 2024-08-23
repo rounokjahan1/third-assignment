@@ -20,13 +20,12 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            buttonBg: 'rgba(171, 239, 95, 0.5)',
           },
           fontFamily : {
             'manrope' : ["Manrope",'sans-serif']
           },
-          backgroundImage: {
-           'custom-gradient': 'linear-gradient(0deg, #ffffff, rgba(255, 255, 255, 0) 100%)',
-      },
+          
         }
       }
     }
@@ -34,17 +33,17 @@
 </head>
 <body class="font-manrope">
   <!-- header section-->
-  <header class="bg-custom-gradient">
-    <nav class="max-w-[1170px] mx-auto px-5 lg:px-0">
+  <header class="bg-gradient-to-b from-gray-50 to-white">
+    <nav class="max-w-[1170px] mx-auto px-5 py-9 lg:py-12 lg:px-0">
       <div class="navbar">
         <div class="navbar-start">
           <div class="h-8 w-8 rounded-full bg-[#ABEF5F] relative mr-1">
-              <i class="fa-solid fa-arrow-right text-[#1C1C1C] text-lg -rotate-45 absolute top-[3px] left-[7px]"></i>
+              <i class="fa-solid fa-arrow-right text-[#1C1C1C] text-lg -rotate-45 absolute top-[2px] left-2"></i>
           </div> 
           
           <a href="#" class="text-3xl text-[#212121] font-extrabold">Rinterio</a>
         </div>
-        <div class="navbar-center hidden lg:flex mr-24">
+        <div class="navbar-center hidden lg:flex mr-20">
           <ul class="menu menu-horizontal px-1">
             <li><a class="text-[#494949] font-extrabold">Home</a></li>
             <li><a class="text-[#737373]">Services</a></li>
@@ -63,10 +62,10 @@
                 <i class="fa-solid fa-cart-shopping absolute top-3 left-3 text-xl"></i>
               </div>
               <div>
-                <button class="">
-                  <a class="px-3 py-4 bg-[#ABEF5F] rounded-[32px] text-xl text-[#1C1C1C] font-extrabold">Book Consult
-                    <span class="bg-[#1C1C1C] rounded-full px-2 ml-1">
-                        <i class="fa-solid fa-arrow-right text-sm text-white -rotate-45"></i>
+                <button>
+                  <a class="w-64 h-14 px-4 py-5 bg-[#ABEF5F] rounded-[32px] text-xl text-[#1C1C1C] font-extrabold">Book Consult
+                    <span class="bg-[#1C1C1C] rounded-full relative px-[14px] py-[1px] ml-1">
+                        <i class="fa-solid fa-arrow-right text-white  text-lg -rotate-45 absolute top-[1px] right-[5px]"></i>
                     </span>
                   </a>
                 </button>
@@ -76,7 +75,7 @@
 
           <div class="dropdown">
             <div tabindex="0" role="button" class="lg:hidden">
-              <i class="fa-solid fa-bars bg-white text-[#737373] rounded-full text-lg px-2 py-1"></i>
+              <i class="fa-solid fa-bars bg-white text-[#737373] rounded-full text-lg px-3 py-1"></i>
             </div>
             <ul
               tabindex="0"
@@ -91,7 +90,26 @@
         </div>
       </div>
     </nav>
+
     <!-- banner -->
+    <section class="max-w-[1170px] mx-auto">
+      <div class="flex flex-col items-center justify-center px-5 lg:px-0">
+        <div class="max-w-[270px] lg:max-w-[570px]">
+          <img class="w-full" src="assets/banner.png" alt="">
+        </div>
+        <div class="text-center space-y-4 lg:space-y-6 mt-6">
+          <h1 class="text-3xl leading-7 lg:text-6xl text-[#212121] font-black ">A barn house of this design has a striking appearance</h1>
+          <p class="w-full lg:w-5/6 lg:mx-auto text-[#494949] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        </div>
+        <div class="mt-5 w-full lg:mt-8">
+          <button class="bg-buttonBg w-full mx-auto lg:w-[210px] h-14 px-4 py-6 rounded-[32px] text-xl font-extrabold flex items-center justify-center"><a href="">View Details <span class="bg-[#ABEF5F] rounded-full relative px-[14px] py-[1px] ml-2">
+            <i class="fa-solid fa-arrow-right text-lg text-[#1C1C1C] -rotate-45 absolute top-[1px] right-[5px]"></i>
+            </span></a></button>
+        </div>
+       
+       
+      </div>
+    </section> 
 
   </header>
   <!-- main section -->
