@@ -21,6 +21,7 @@
           colors: {
             clifford: '#da373d',
             buttonBg: 'rgba(171, 239, 95, 0.5)',
+            backgroundColor: 'rgba(30, 30, 30, 0.1)',
           },
           fontFamily : {
             'manrope' : ["Manrope",'sans-serif']
@@ -101,19 +102,65 @@
           <h1 class="text-3xl leading-7 lg:text-6xl text-[#212121] font-black ">A barn house of this design has a striking appearance</h1>
           <p class="w-full lg:w-5/6 lg:mx-auto text-[#494949] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
         </div>
-        <div class="mt-5 w-full lg:mt-8">
+        <div class="mt-5 mb-10 lg:mb-16 w-full lg:mt-8">
           <button class="bg-buttonBg w-full mx-auto lg:w-[210px] h-14 px-4 py-6 rounded-[32px] text-xl font-extrabold flex items-center justify-center"><a href="">View Details <span class="bg-[#ABEF5F] rounded-full relative px-[14px] py-[1px] ml-2">
-            <i class="fa-solid fa-arrow-right text-lg text-[#1C1C1C] -rotate-45 absolute top-[1px] right-[5px]"></i>
-            </span></a></button>
+          <i class="fa-solid fa-arrow-right text-lg text-[#1C1C1C] -rotate-45 absolute top-[1px] right-[5px]"></i>
+          </span></a></button>
         </div>
-       
-       
       </div>
     </section> 
-
   </header>
+
   <!-- main section -->
   <main>
+    <!-- design section -->
+    <section class="bg-backgroundColor relative">
+      <div class="max-w-[1170px] mx-auto px-5 lg:px-0 py-8 lg:py-24">
+        <div class="absolute top-5 border-2 left-[2.5%] border-gray-300 py-5 border-dashed hidden lg:block">
+          <img src="assets/vector1.png" alt="">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-9">
+          <!-- text content -->
+          <div class="text-center lg:text-left">
+            <div class="w-32 bg-white rounded-3xl inline-block px-4 py-2 mb-4">
+              <p class="text-[#494949] font-bold"><span><i class="fa-solid fa-arrow-right mr-1"></i></span> About Us</p>
+            </div>
+            <div class="space-y-4 mb-6">
+              <h2 class="text-[#212121] text-2xl leading-8 lg:text-[40px] lg:leading-[55px] font-black">We design thoughtful, <br>
+                 liveable spaces</h2>
+              <p class="text-[#494949] font-medium leading-7">We craft carefully designed, functional spaces that prioritize comfort and usability, making every environment both beautiful and practical.</p>   
+            </div>
+            <div class="bg-white p-5 lg:p-6 flex items-start lg:items-center mb-6 rounded-2xl">
+              <div class="w-16">
+                <img src="assets/commercial.png" alt="">
+              </div>
+              <div class="ml-6 text-left">
+                <h4 class="text-xl text-[#494949] font-extrabold mb-2 ">Commercial</h4>
+                <p class="text-[#737373] leading-6 w-full lg:w-4/5">Designing dynamic, functional commercial spaces to elevate business success.</p>
+              </div>
+            </div>
+            <div class="bg-white p-5 lg:p-6 flex items-start lg:items-center rounded-2xl">
+              <div class="w-16">
+                <img src="assets/commercial.png" alt="">
+              </div>
+              <div class="ml-6 text-left">
+                <h4 class="text-xl text-[#494949] font-extrabold mb-2">Residential</h4>
+                <p class="text-[#737373] leading-6 w-full lg:w-4/5">Crafting personalized, comfortable residential spaces that enhance daily living.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- image -->
+          <div class="lg:max-w-[573px]">
+            <img class="object-none rounded-2xl lg:object-cover max-w-full" src="assets/rectangle1.png" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section> 
+
+
 
   </main>
   <!-- footer section -->
