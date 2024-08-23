@@ -23,7 +23,10 @@
           },
           fontFamily : {
             'manrope' : ["Manrope",'sans-serif']
-          }
+          },
+          backgroundImage: {
+           'custom-gradient': 'linear-gradient(0deg, #ffffff, rgba(255, 255, 255, 0) 100%)',
+      },
         }
       }
     }
@@ -31,7 +34,64 @@
 </head>
 <body class="font-manrope">
   <!-- header section-->
-  <header>
+  <header class="bg-custom-gradient">
+    <nav class="max-w-[1170px] mx-auto px-5 lg:px-0">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="h-8 w-8 rounded-full bg-[#ABEF5F] relative mr-1">
+              <i class="fa-solid fa-arrow-right text-[#1C1C1C] text-lg -rotate-45 absolute top-[3px] left-[7px]"></i>
+          </div> 
+          
+          <a href="#" class="text-3xl text-[#212121] font-extrabold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex mr-24">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#494949] font-extrabold">Home</a></li>
+            <li><a class="text-[#737373]">Services</a></li>
+            <li><a class="text-[#737373]">Portfolio</a></li>
+            <li><a class="text-[#737373]">Blogs</a></li>
+            <li><a class="text-[#737373]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden lg:block">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 bg-white rounded-full relative">
+                <i class="fa-solid fa-magnifying-glass absolute top-3 left-4 text-xl"></i>
+              </div>
+              <div class="w-12 h-12 bg-white rounded-full relative">
+                <i class="fa-solid fa-cart-shopping absolute top-3 left-3 text-xl"></i>
+              </div>
+              <div>
+                <button class="">
+                  <a class="px-3 py-4 bg-[#ABEF5F] rounded-[32px] text-xl text-[#1C1C1C] font-extrabold">Book Consult
+                    <span class="bg-[#1C1C1C] rounded-full px-2 ml-1">
+                        <i class="fa-solid fa-arrow-right text-sm text-white -rotate-45"></i>
+                    </span>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="lg:hidden">
+              <i class="fa-solid fa-bars bg-white text-[#737373] rounded-full text-lg px-2 py-1"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+              <li><a class="text-[#494949] font-extrabold">Home</a></li>
+              <li><a class="text-[#737373]">Services</a></li>
+              <li><a class="text-[#737373]">Portfolio</a></li>
+              <li><a class="text-[#737373]">Blogs</a></li>
+              <li><a class="text-[#737373]">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
 
   </header>
   <!-- main section -->
