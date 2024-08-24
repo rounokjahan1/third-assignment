@@ -26,8 +26,11 @@
             borderColor: 'rgb(233, 233, 233)',
           },
           fontFamily : {
-            'manrope' : ["Manrope",'sans-serif']
+            'manrope' : ["Manrope",'sans-serif'],
           },
+          backgroundImage : {
+            customImage : "url('./assets/bg.jpg')",
+          }
           
         }
       }
@@ -153,8 +156,8 @@
 
           </div>
           <!-- image -->
-          <div class="rounded-2xl lg:max-w-[573px]">
-            <img class=" lg:object-cover max-w-full" src="assets/rectangle1.png" alt="">
+          <div class="h-[240px] lg:h-[545px]">
+            <img class="rounded-2xl object-none object-[50%_50%] lg:object-cover  h-full w-full" src="assets/rectangle1.png" alt="">
           </div>
 
         </div>
@@ -238,7 +241,7 @@
             </div>
             <div class="space-y-4 lg:space-y-6 mb-4 lg:mb-8">
               <h2 class="text-[#212121] text-2xl leading-8 lg:text-[40px] lg:leading-[55px] font-black">Our Latest Portfolio</h2>
-              <p class="w-full lg:w-7/12 lg:mx-auto text-[#494949] text-sm font-medium leading-7">Discover our latest portfolio featuring diverse, groundbreaking projects that highlight our design expertise and commitment to architectural excellence.</p>   
+              <p class="w-full lg:w-7/12 lg:mx-auto text-[#494949] text-sm lg:text-basis font-medium leading-7">Discover our latest portfolio featuring diverse, groundbreaking projects that highlight our design expertise and commitment to architectural excellence.</p>   
             </div>
           </div>
           <!-- grid section -->
@@ -307,25 +310,59 @@
                 <img class="w-full h-full" src="assets/img5.png" alt="">
               </div>
             </div>
-
-
           </div>
-          
-
-
         </div>
-
       </div>
 
     </section> 
 
-
+    <!-- discuss section -->
+    <section class="bg-customImage bg-no-repeat bg-cover border-[3px] lg:border-[7px] border-white">
+      <div class="w-full h-full bg-customImage bg-no-repeat bg-cover  bg-opacity-50">
+        <div class="max-w-[970px] mx-auto px-6 lg:px-0 py-8 lg:py-20">
+          <!-- text -->
+          <div class="text-center">
+            <div class="bg-secondaryButton rounded-3xl inline-block px-4 py-2 mb-4">
+              <p class="text-[#494949] font-bold"><span><i class="fa-solid fa-arrow-right mr-1"></i></span> Let’s Connect</p>
+            </div>
+            <div class="space-y-4 lg:space-y-6 mb-8">
+              <h2 class="w-2/3 mx-auto lg:w-full text-[#212121] text-2xl leading-8 lg:text-[40px] lg:leading-[55px] font-black">Let’s Discuss Next Project</h2>
+              <p class="w-full lg:w-2/3 lg:mx-auto text-[#494949] text-sm lg:text-basis font-medium leading-7">Let’s discuss your upcoming project to craft unique, innovative designs that perfectly align with your vision and goals.</p>   
+            </div>
+          </div>
+          <!-- input content -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
+            <div>
+              <input class="px-4 py-5 lg:px-5 w-full placeholder:text-[#A0A0A0] placeholder:font-medium border border-[#E9E9E9] outline-none rounded-[64px] bg-white" type="text" placeholder="First Name*" >
+            </div>
+            <div>
+              <input class="px-4 py-5 lg:px-5 w-full placeholder:text-[#A0A0A0] placeholder:font-medium border border-[#E9E9E9] outline-none rounded-[64px] bg-white" type="text" placeholder="Last Name*" >
+            </div>
+            <div>
+              <input class="px-4 py-5 lg:px-5 w-full placeholder:text-[#A0A0A0] placeholder:font-medium border border-[#E9E9E9] outline-none rounded-[64px] bg-white" type="text" placeholder="Phone Number*" >
+            </div>
+            <div>
+              <input class="px-4 py-5 lg:px-5 w-full placeholder:text-[#A0A0A0] placeholder:font-medium border border-[#E9E9E9] outline-none rounded-[64px] bg-white" type="text" placeholder="Email Number*" >
+            </div>
+            <div class="lg:col-span-2">
+              <textarea class="p-5 w-full resize-none placeholder:text-[#A0A0A0] placeholder:font-medium border border-[#E9E9E9] outline-none rounded-[32px] bg-white" placeholder="Write your message here" name="" id="" cols="30" rows="8"></textarea>
+            </div>
+            <button class="lg:col-span-2">
+              <a class="px-3 block py-5 bg-[#ABEF5F] rounded-[32px] text-xl text-[#1C1C1C] font-extrabold">Send Mail
+                <span class="bg-[#1C1C1C] rounded-full relative px-[14px] py-[1px] ml-1">
+                <i class="fa-solid fa-arrow-right text-white  text-lg -rotate-45 absolute top-[1px] right-[5px]"></i>
+                </span>
+              </a>
+            </button>
+          </div> 
+        </div>
+      </div>
+    </section>
 
   </main>
-  <!-- footer section -->
-  <footer>
 
-  </footer>
+  <!-- footer section -->
+  
   
 </body>
 </html>
